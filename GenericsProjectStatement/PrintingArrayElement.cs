@@ -8,16 +8,16 @@ namespace GenericsProjectStatement
 {
     public class PrintingArrayElement
     {
-        public void Maximumstring(string[] stringArray)
+        public void Maximumelement(float[] floatArray)
         {
-            Array.Sort(stringArray,0,4);
-            foreach (string str in stringArray)
+            Array.Sort(floatArray);
+            foreach (var str in floatArray)
             {
                 Console.Write( str+" ");
             }
             Console.WriteLine(" ");
-            int len=stringArray.Length;
-            Console.WriteLine("Maximum Element of the Array is:->"+stringArray[len-1]);
+            int len= floatArray.Length;
+            Console.WriteLine("Maximum Element of the Array is:->"+ floatArray[len-1]);
         }
     }
 }
