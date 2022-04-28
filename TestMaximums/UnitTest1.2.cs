@@ -12,9 +12,9 @@ namespace TestMaximums
     {
         public void GivenStringInput_WhenTestMax_SecondPosition_ShouldReturnMaxNum()
         {
-            MaxString max = new MaxString();
-            string actual = max.FindMaxString("Peach", "Banana", "Apple");
-            Assert.AreEqual(actual, "Banana");
+            GenericMaximum<float> max = new GenericMaximum<float>();
+            float actual = max.FindMaxElement(10.5f, 11.5f, 12.5f);
+            Assert.AreEqual(actual, 12.5f);
         }
     }
 }

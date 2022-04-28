@@ -12,8 +12,8 @@ namespace TestMaximums
     {
         public void GivenFloatInput_WhenTestMax_ThirdPosition_ShouldReturnMaxNum()
         {
-            MaxString max = new MaxString();
-            string actual = max.FindMaxString("Peach", "Apple", "Banana");
+            GenericMaximum<string> max = new GenericMaximum<string>();
+            string actual = max.FindMaxElement("Peach", "Apple", "Banana");
             Assert.AreEqual(actual, "Banana");
         }
     }
