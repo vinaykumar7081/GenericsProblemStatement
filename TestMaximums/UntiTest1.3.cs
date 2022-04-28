@@ -10,11 +10,11 @@ namespace TestMaximums
 {
     public class UntiTest1
     {
-        public void GivenIntInput_WhenTestMax_ThirdPosition_ShouldReturnMaxNum()
+        public void GivenFloatInput_WhenTestMax_ThirdPosition_ShouldReturnMaxNum()
         {
             MaxNumber max = new MaxNumber();
-            int actual = max.FindMaxInteger(45, 55, 30);
-            Assert.AreEqual(actual, 55);
+            float actual = max.FindMaxFloat(45.1f, 55.5f, 30.9f);
+            Assert.AreEqual(actual, 55.5f);
         }
     }
 }
