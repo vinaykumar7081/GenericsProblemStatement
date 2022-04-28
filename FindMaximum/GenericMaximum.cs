@@ -8,31 +8,13 @@ namespace FindMaximum
 {
     public class GenericMaximum<T> where T : IComparable<T>
     {
-        public T firstValue, secondValue, thirdValue;
-        public GenericMaximum(T firstValue, T secondValue, T thirdValue)
-        { 
-            this.firstValue = firstValue;
-            this.secondValue = secondValue;
-            this.thirdValue = thirdValue;
-        }
-        public T FindMaxElement()
+        public T FindMaxElement(T[] array)
         {
-           
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-            {
-                Console.WriteLine("First Number is Greater");
-                return firstValue;
-            }
-            if (secondValue.CompareTo(firstValue) >= 0 && secondValue.CompareTo(thirdValue) > 0)
-            {
-                Console.WriteLine("Second Number is Greater");
-                return secondValue;
-            }
-            else 
-            {
-                Console.Write("Greatest Number is third:->");
-            return thirdValue;
-            }
+            Array.Sort(array);
+            int length_Array= array.Length;
+            T element=array[length_Array-1];
+            return element;
+            
         }
     }
 }

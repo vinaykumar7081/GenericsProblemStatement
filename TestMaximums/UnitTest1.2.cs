@@ -12,9 +12,10 @@ namespace TestMaximums
     {
         public void GivenStringInput_WhenTestMax_SecondPosition_ShouldReturnMaxNum()
         {
-            GenericMaximum<float> max = new GenericMaximum<float>(10.5f, 11.5f, 12.5f);
-            float actual = max.FindMaxElement();
-            Assert.AreEqual(actual, 12.5f);
+            GenericMaximum<float> max = new GenericMaximum<float>();
+            float[] array = { 10.5f, 11.5f, 12.5f,15.8f,18.28f };
+            float actual = max.FindMaxElement(array);
+            Assert.AreEqual(actual, 18.28f);
         }
     }
 }
