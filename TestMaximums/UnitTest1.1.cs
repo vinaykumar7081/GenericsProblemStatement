@@ -7,11 +7,11 @@ namespace TestMaximums
     public class Tests
     {
         [Test]
-        public void GivenFloatInput_WhenTestMax_FirstPosition_ShouldReturnMaxNum()
+        public void GivenStringInput_WhenTestMax_FirstPosition_ShouldReturnMaxNum()
         {
-            MaxNumber max =new MaxNumber();
-            float actual = max.FindMaxFloat(50.5f,45.6f,30.7f);
-            Assert.AreEqual(actual,50.5f);
+            MaxString max =new MaxString();
+            string actual = max.FindMaxString("Banana", "Peach", "Apple");
+            Assert.AreEqual(actual, "Banana");
         }
        
     }
