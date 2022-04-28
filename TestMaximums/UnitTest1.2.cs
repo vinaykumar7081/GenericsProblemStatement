@@ -12,8 +12,8 @@ namespace TestMaximums
     {
         public void GivenStringInput_WhenTestMax_SecondPosition_ShouldReturnMaxNum()
         {
-            GenericMaximum<float> max = new GenericMaximum<float>();
-            float actual = max.FindMaxElement(10.5f, 11.5f, 12.5f);
+            GenericMaximum<float> max = new GenericMaximum<float>(10.5f, 11.5f, 12.5f);
+            float actual = max.FindMaxElement();
             Assert.AreEqual(actual, 12.5f);
         }
     }

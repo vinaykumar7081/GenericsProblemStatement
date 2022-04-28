@@ -8,7 +8,14 @@ namespace FindMaximum
 {
     public class GenericMaximum<T> where T : IComparable<T>
     {
-        public T FindMaxElement( T firstValue, T secondValue, T thirdValue)
+        public T firstValue, secondValue, thirdValue;
+        public GenericMaximum(T firstValue, T secondValue, T thirdValue)
+        { 
+            this.firstValue = firstValue;
+            this.secondValue = secondValue;
+            this.thirdValue = thirdValue;
+        }
+        public T FindMaxElement()
         {
            
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)

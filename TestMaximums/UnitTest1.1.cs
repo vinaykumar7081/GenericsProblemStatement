@@ -9,8 +9,8 @@ namespace TestMaximums
         [Test]
         public void GivenIntInput_WhenTestMax_ShouldReturnMaxNum()
         {
-            GenericMaximum<int> max = new GenericMaximum<int>();
-            int actual = max.FindMaxElement(1,5,10);
+            GenericMaximum<int> max = new GenericMaximum<int>(1, 5, 10);
+            int actual = max.FindMaxElement();
             Assert.AreEqual(actual, 10);
         }
        
